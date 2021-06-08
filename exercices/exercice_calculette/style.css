@@ -1,0 +1,97 @@
+#container{
+    width: 400px;
+    height: 550px;
+    background-color: rgb(51, 51, 51);
+    box-shadow: 0px 10px 5px silver ;
+}
+
+
+/*Zone d'affichage*/
+.containerAffichage{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(61, 61, 61);
+    padding-top: 10px;
+}
+.containerAffichage > #numberCalc{
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+    box-shadow: inset 0px 5px 5px silver;
+    text-align: right;
+    font-size: 30px;
+}
+#affichageCalcul{
+    width: 90%;
+    height: 30px;
+    margin: 5px auto;
+    background-color: rgb(0, 0, 0);
+
+    /*Attention à ne pas oublier*/
+    color: white;
+}
+
+/*Zone button*/
+.containerNumberCalcul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.containerNumberCalcul > .allNumber{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.containerNumberCalcul > .allNumber > button{
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: inset 0px -5px 5px silver;
+}
+
+.containerNumberCalcul > .allCalc{
+    width: 100px;
+}
+.containerNumberCalcul > .allCalc > button{
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: inset 0px -5px 5px silver;
+}
+
+
+/*Zone Action ( egale et effacé )*/
+.containerAction{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.containerAction > button{
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: inset 0px -2px 10px black;
+}
+.containerAction > #suppr{
+    background-color: red;
+    color: white;
+}
+.containerAction > #egal{
+    
+    background-color: green;
+    color: white;
+}
+
+
+
