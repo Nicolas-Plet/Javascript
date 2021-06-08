@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-.carousel{
+#carousel{
     display: flex;
     flex-direction: row;
     width: 300%;
@@ -17,7 +17,7 @@
     background-color: red;
 }
 
-.arrow_left {
+#arrow_left {
     position: absolute;
     width: 150px;
     height: 50px;
@@ -25,10 +25,10 @@
     top: calc(350px - 25px);
 
     filter: invert();
-    z-index: 1;
+    z-index: 5;
 }
 
-.arrow_right {
+#arrow_right {
     position: absolute;
     width: 150px;
     height: 50px;
@@ -37,25 +37,32 @@
     left: calc(100% - 165px);
 
     filter: invert();
-    z-index: 1;
+    z-index: 5;
 }
 
-.img_carousel{
+#img_1{
     position: relative;
     width: 100%;
-}
-
-.img_1 {
     top : 0;
     left: -100%;
+
+    transition: all 2s;
 }
 
-.img_2 {
+#img_2{
+    position: relative;
+    width: 100%;
     top : 0;
     left: -100%;
+
+    transition: all 2s;
 }
 
-.img_3 {
+#img_3{
+    position: relative;
+    width: 100%;
     top : 0;
     left: -100%;
+
+    transition: all 2s;
 }

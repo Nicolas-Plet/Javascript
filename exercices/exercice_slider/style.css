@@ -1,0 +1,46 @@
+#slider{
+    width: 1000px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+#blockImage{
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 0;
+    left: -0px;
+    transition: 0.5s;
+}
+#blockImage > img{
+    height: 500px;
+    width: 1000px;
+    object-fit: cover;
+}
+
+#next{
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
+#prev{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: white;
+}
