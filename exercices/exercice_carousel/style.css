@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    width: 300%;
+    height: 700px;
+}
+
+.mask{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: calc(100% /3);
+    background-color: red;
+}
+
+.arrow_left {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+
+    top: calc(350px - 25px);
+
+    filter: invert();
+    z-index: 1;
+}
+
+.arrow_right {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+
+    top: calc(350px - 25px);
+    left: calc(100% - 165px);
+
+    filter: invert();
+    z-index: 1;
+}
+
+.img_carousel{
+    position: relative;
+    width: 100%;
+}
+
+.img_1 {
+    top : 0;
+    left: -100%;
+}
+
+.img_2 {
+    top : 0;
+    left: -100%;
+}
+
+.img_3 {
+    top : 0;
+    left: -100%;
+}
