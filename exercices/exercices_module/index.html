@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <!-- Exercice sur le dropdown menu -->
+    <div class="container">
+        <div id="dropdown_container">
+            <button id="button_display">Faite votre choix</button>
+            <div id="items_container">
+            </div>
+        </div>
+    </div>
+    <!-- Exercices sur l'addition + modal  -->
+    <div class="container">
+        <div class="addition">
+            <div class="nb">
+                <h1>Premier nombre</h1>
+                <input id="nb_1" type="number" maxlength="10">
+            </div>
+            <div class="nb">
+                <h1>Deuxième nombre</h1>
+                <input id="nb_2" type="number" maxlength="10">
+            </div>
+            <button id="button_result">Click Resultat</button>
+        </div>
+        <div id="container_modal">
+
+        </div>
+    </div>
+
+    <!-- Exercice de formulaire -->
+    <div class="container">
+        <form id="formulaire" action="">
+            <div class="info">
+                <h1>Nom</h1>
+                <input type="text" name="nom" id="nom">
+            </div>
+            <div class="info">
+                <h1>Prénom</h1>
+                <input type="text" name="prenom" id="prenom">
+            </div>
+            <div class="info">
+                <h1>email</h1>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="info">
+                <h1>message</h1>
+                <textarea name="message" id="message" cols="40" rows="10"></textarea>
+            </div>
+        </form>
+        <button id="button_form">Envoyer information</button>
+    </div>
+    <!-- Exercice de menu accordeon -->
+    <div class="container">
+        <div id="accordeon">
+            <div>
+                <button id="button_1">accordeon 1</button>
+                <div id="content_1">
+                    <p id="para_1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatem, voluptate provident
+                        laboriosam ipsa distinctio vel sint facere fuga id! Et nihil omnis dolore enim earum officiis
+                        sequi repudiandae deleniti?
+                    </p>
+                </div>
+            </div>
+            <div>
+                <button id="button_2">accordeon 2</button>
+                <div id="content_2">
+                    <p id="para_2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloremque obcaecati nobis velit
+                        quam explicabo eaque repellendus aut, ratione error harum hic, quibusdam eos, delectus quo
+                        tenetur inventore reiciendis distinctio.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <button id="button_3">accordeon 3</button>
+                <div id="content_3">
+                    <p id="para_3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis natus quia neque aspernatur
+                        tenetur distinctio velit id? Illum fugiat est doloribus voluptates dignissimos, reprehenderit
+                        sit fugit porro sunt id doloremque!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Exercice sur la scrollbar -->
+    <div class="container">
+        <div class="end">
+            <button id="button_scroll_top">Click to the top</button>
+        </div>
+    </div>
+</body>
+
+</html>
