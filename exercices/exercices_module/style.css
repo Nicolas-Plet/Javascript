@@ -1,27 +1,44 @@
 *{
+    box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+.exercice_title_top {
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+.exercice_title {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 24px;
 }
 
 #container
 {
-    display: flex;
-    width: 1920px !important;
-    height: 300px !important;
-    background-color: blue;
+    height: fit-content !important;
+    margin: 15px 0 15px 0;
+}
+
+.container:nth-child(odd)
+{
+    background-color: grey;
+}
+
+.container:nth-child(even)
+{
+    background-color: lightgrey;
 }
 /* --------------------------------------------------------- */
 /* -----------------------Scroll top------------------------------ */
 /* --------------------------------------------------------- */
-.end{
+.end {
     display: flex;
     width: 100%;
-    height: 300px;
     justify-content: flex-end;
-    align-items: flex-end;
-    /* background-color: red; */
 }
 
-#scroll_top{
+#scroll_top {
     height: 20%;
 }
 
@@ -32,15 +49,10 @@
 #button_display
 {
     width: 200px;
-    height: 25px
+    height: 25px;
 }
 
 #dropdown_container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    height: 300px;
 }
 
 #items_container {
@@ -48,12 +60,10 @@
     flex-direction: column;
     overflow: hidden;
     height: 0px;
-    /* background-color: red; */
     transition: all 0.5s;
 }
 
 .item {
-    display: flex;
     width: 200px;
     height: 25px;
 }
@@ -61,6 +71,22 @@
 /* --------------------------------------------------------- */
 /* -----------------------Addition------------------------------ */
 /* --------------------------------------------------------- */
+
+.nb{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+}
+
+.nb h1{
+    width: 200px;
+}
+
+.nb input{
+    width: 200px;
+    height: 25px;
+}
 
 #button_result {
     margin-top: 15px;
@@ -77,42 +103,115 @@
     padding: 0px;
 }
 
+.info{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+}
+
+.info h1{
+    width: 200px;
+}
+
+.info input{
+    width: 200px;
+    height: 25px;
+}
+
 /* --------------------------------------------------------- */
 /* -----------------------Accordeon------------------------- */
 /* --------------------------------------------------------- */
 
 #accordeon{
-    margin-top: 25px;
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 300px; */
     /* background-color: red; */
 }
 
 #button_1 {
-    width: 100%;
+    width: 50%;
 }
 
 #button_2 {
-    width: 100%;
+    width: 50%;
 }
 
 #button_3 {
-    width: 100%;
+    width: 50%;
 }
 
 #content_1 {
+    width: 50%;
     height: 0;
     overflow: hidden;
     transition: all 0.5s;
 }
 
 #content_2 {
+    width: 50%;
     height: 0;
     overflow: hidden;
     transition: all 0.5s;
 }
 
 #content_3 {
+    width: 50%;
     height: 0;
     overflow: hidden;
     transition: all 0.5s;
+}
+
+/* --------------------------------------------------------- */
+/* -----------------------Popover------------------------- */
+/* --------------------------------------------------------- */
+
+#pop_background {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    opacity: 0;
+    transition: all 0.5s;
+    padding: 0;
+    margin: 0;
+}
+
+#pop_title{
+    display: flex;
+    background-color: grey;
+    margin: 0;
+    padding: 5px;
+}
+
+#pop_para {
+    margin: 5px;
+}
+
+/* --------------------------------------------------------- */
+/* -----------------------Loader------------------------- */
+/* --------------------------------------------------------- */
+
+#loader_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+#loading_title {
+    display: flex;
+    font-size: 24px;
+}
+
+.container_all {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.2s;
 }
