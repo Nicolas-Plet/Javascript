@@ -39,7 +39,10 @@ const modal = {
         modal.modal.style.justifyContent = "center";
         modal.modal.style.alignItems = "center";
         modal.modal.style.position = "absolute";
-        modal.modal.style.top = "calc(50% - 150px)";
+
+        let posY = (((window.innerHeight / 2) + window.scrollY) - 150);
+
+        modal.modal.style.top = posY.toString() + "px";
         modal.modal.style.left = "calc(50% - 75px)";
         modal.modal.style.backgroundColor = "grey";
         modal.modal.style.border = "2px black solid";

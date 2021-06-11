@@ -5,6 +5,7 @@ import {formulaire} from "./modules/formulaire.mjs"
 import {accordeon} from "./modules/accordeon.mjs"
 import {popover} from "./modules/popover.mjs"
 import {loader} from "./modules/loader.mjs"
+import {animation_scroll} from "./modules/animation_scroll.mjs"
 
 
 loader.Initialize();
@@ -15,3 +16,7 @@ modal.Initialize();
 formulaire.Initialize();
 accordeon.Initialize();
 popover.Initialize();
+animation_scroll.Initialize();
+
+animation_scroll.Anim();
+

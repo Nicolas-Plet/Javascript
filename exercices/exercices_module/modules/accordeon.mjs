@@ -12,59 +12,52 @@ const accordeon = {
     content_3: document.getElementById("content_3"),
 
     Initialize: function () {
-        accordeon.button_1.addEventListener("click", function() {
+        accordeon.button_1.addEventListener("click", function () {
             accordeon.Display(0);
         })
-        accordeon.button_2.addEventListener("click", function() {
+        accordeon.button_2.addEventListener("click", function () {
             accordeon.Display(1);
         })
-        accordeon.button_3.addEventListener("click", function() {
+        accordeon.button_3.addEventListener("click", function () {
             accordeon.Display(2);
         })
     },
 
-    Display: function(id) {
+    Display: function (id) {
 
-        if (id == 0)
-        {
-            if (accordeon.content_1.style.height == accordeon.content_size)
-            {
-                accordeon.content_1.style.height = "0px";
+        if (id == 0) {
+            if (accordeon.content_1.style.height == accordeon.content_size) {
+                accordeon.Reset();
             }
-            else
-            {
+            else {
+                accordeon.Reset();
                 accordeon.content_1.style.height = accordeon.content_size;
-                accordeon.content_2.style.height = "0px";
-                accordeon.content_3.style.height = "0px";
             }
         }
-        else if (id == 1)
-        {
-            if (accordeon.content_2.style.height == accordeon.content_size)
-            {
-                accordeon.content_2.style.height = "0px";
+        else if (id == 1) {
+            if (accordeon.content_2.style.height == accordeon.content_size) {
+                accordeon.Reset();
             }
-            else
-            {
-                accordeon.content_1.style.height = "0px";
+            else {
+                accordeon.Reset();
                 accordeon.content_2.style.height = accordeon.content_size;
-                accordeon.content_3.style.height = "0px";
             }
-            
         }
-        else
-        {
-            if (accordeon.content_3.style.height == accordeon.content_size)
-            {
-                accordeon.content_3.style.height = "0px";
+        else {
+            if (accordeon.content_3.style.height == accordeon.content_size) {
+                accordeon.Reset();
             }
-            else
-            {
-                accordeon.content_1.style.height = "0px";
-                accordeon.content_2.style.height = "0px";
+            else {
+                accordeon.Reset();
                 accordeon.content_3.style.height = accordeon.content_size;
             }
         }
+    },
+
+    Reset: function () {
+        accordeon.content_1.style.height = "0px";
+        accordeon.content_2.style.height = "0px";
+        accordeon.content_3.style.height = "0px";
     }
 }
 
